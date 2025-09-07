@@ -3,7 +3,7 @@ export default function Row({item,deleteTask}) {
     
     <li>
         {item.description}
-        <button classname='delete-button' onClick={() => deleteTask(item)}>Delete</button>
+        <button classname='delete-button' onClick={() => deleteTask(item.id)}>Delete</button>
     </li>
     )
 }

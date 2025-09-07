@@ -43,7 +43,7 @@ function App() {
     console.log(headers)
     axios.delete(url + "/delete/" + deleted,headers)
     .then(response => {
-      setTasks(tasks.filter(item => item !== deleted))
+      setTasks(tasks.filter(item => item.id !== deleted))
     })
   }
 
