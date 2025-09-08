@@ -1,12 +1,41 @@
-# React + Vite
+# Todo -tehtävälista
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### _Yksilötehtävä web-sovellusprojektia varten_
 
-Currently, two official plugins are available:
+Todo -tehtävälista on websovellus, jossa kirjautuneet käyttäjät voivat tarkastella tehtävälistaansa, lisätä uusia tehtäviä ja poistaa vanhoja tehtäviä.
+Sovellus koostuu erillisistä frontend- ja backend -osista.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Sovelluksen ominaisuudet
 
-## Expanding the ESLint configuration
+- Käyttäjän rekisteröinti ja kirjautuminen JWT -autentikoinnilla
+- Tehtävien listaaminen, lisääminen ja poistaminen
+- Turvallinen salasanojen käsittely bcryptin avulla
+- Tietojen tallennus PostegreSQL -tietokantaan
+- REST API kommunikointiin Frontendin ja Backendin välillä
+- REST API:n automaatinen testaus
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Teknologiat
+
+#### Frontend
+
+- **React** - käyttöliittymän rakentaminen
+- **JavaScript** - ohjelmointikieli
+- **Axios** - HTTP-kutsujen tekeminen REST API:n
+- **React Hooks** - tilanhallinta ja komponenttien välinen tiedonjako
+
+#### Backend
+
+- **Node.js & Express** – palvelinpuolen toteutus
+- **JavaScript** – ohjelmointikieli
+- **JWT (jsonwebtoken)** – käyttäjän autentikointi ja autorisointi
+- **bcrypt** – salasanojen salaaminen
+- **dotenv** – ympäristömuuttujien hallintaan
+- **PostgreSQL** – relaatiotietokanta
+- **MVC (Model-View-Controller)** – arkkitehtuurimallina backendissä
+
+#### Testaus
+
+- REST API:n automaattinen testaus
+- Hyödynnetään Mocha ja Chai -kirjastoja
+
+
